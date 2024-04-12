@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    padding: 6rem;
+}
+
+article {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+}
+
+section {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    color: #282725;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: "Young Serif", serif;
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-family: 700;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    color: hsl(24, 5%, 18%);
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 1.4rem;
+}
+
+ol,
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+}
+
+li {
+    font-family: "Outfit", sans-serif;
+    color: hsl(24, 5%, 18%);
+    font-size: 16px;
+    margin-left: 1.2rem;
+    padding-left: 1rem;
+}
+
+section li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+span {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+hr {
+    margin: 2rem 0;
+    border: solid 1px hsl(30, 18%, 87%);
+}
+
+table {
+    width: 100%;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    margin-bottom: .5rem;
+}
+
+td {
+    font-family: "Outfit", sans-serif;
+    color: hsl(24, 5%, 18%);
+    padding-left: 2rem;
+    padding-bottom: .5rem;
+    font-size: 16px;
+    width: 50%;
+}
+
+td span {
+    color: hsl(14, 45%, 36%);
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 0;
+    }
+
+    article {
+        border-radius: 0;
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    section {
+        margin: 1rem;
+    }
+
+    section ul {
+        margin: 1rem 0;
+    }
+
+    hr {
+        margin: 1.5rem 1rem;
+    }
+
+    h1,
+    h2,
+    p,
+    ul,
+    ol,
+    table {
+        margin: 1rem;
+    }
+}
